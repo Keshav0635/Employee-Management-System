@@ -22,9 +22,9 @@ from pymysql.err import IntegrityError, MySQLError
 
 
 DB_CONFIG = {
-    "host": os.getenv("DB_HOST", "localhost"),
-    "user": os.getenv("DB_USER", "root"),
-    "password": os.getenv("DB_PASSWORD", "24082003"),
+    "host": os.getenv("DB_HOST", ""),
+    "user": os.getenv("DB_USER", ""),
+    "password": os.getenv("DB_PASSWORD", ""),
     "database": os.getenv("DB_NAME", "company"),
     "charset": "utf8mb4",
     "cursorclass": pymysql.cursors.Cursor,
